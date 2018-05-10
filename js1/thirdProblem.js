@@ -4,72 +4,75 @@
   //1. Add 1 + 2 together
     function adding(numberOne, numberTwo) {
       let total = numberOne + numberTwo;
-      console.log(total);
+      return total;
     }
-    adding(1, 2);
+    console.log(adding(1, 2));
 
     const adding2 = (numberOne, numberTwo) => numberOne + numberTwo;
-    adding(1, 2);
+    console.log(adding2(1, 2));
 
   //2. Divide 15 by 3
     function dividing(numberOne, numberTwo) {
       let total = numberOne / numberTwo;
-      console.log(total);
+      return total;
     }
-    dividing(15, 3)
+    console.log(dividing(15, 3));
 
     const dividing2 = (numberOne, numberTwo) => numberOne / numberTwo;
+    console.log(dividing2(15, 3));
 
   //3. Calculate 5 to the power of 2
       function toThePowerOf(numberOne, numberTwo){
         let total = Math.pow(numberOne, numberTwo);
-        console.log(total);
+        return total;
       }
-        toThePowerOf(5, 2);
+        console.log(toThePowerOf(5, 2));
 
       function squareOf(numberOne){
         let total = Math.pow(numberOne, 2);
-        console.log(total);
+        return total;
       }
-        toThePowerOf(5);
+        console.log(squareOf(5));
 
-      const squareOfTwo = numberOne => x ** 2;
-      square(5);
+      const squareOfTwo = numberOne => numberOne ** 2;
+      console.log(squareOfTwo(5));
 
   //4. Find the absolute value of -3.14
     function absoluteValue(numberOne){
       let total = Math.abs(numberOne);
-      console.log(total);
+      return total;
       }
-      absoluteValue(-3.14);
+      console.log(absoluteValue(-3.14));
 
     const absoluteValue2 = numberOne => Math.abs(numberOne);
-    absoluteValue2(-3.14);
+    console.log(absoluteValue2(-3.14));
 
   //5. Find the square root of 144
       function squareRoot(numberOne){
         let total = Math.sqrt(numberOne);
-        console.log(total);
+        return total;
       }
-      squareRoot(144);
+      console.log(squareRoot(144));
 
       const squareRoot2 = numberOne => Math.sqrt(numberOne);
-      squareRoot2(144);
+      console.log(squareRoot2(144));
 
   //6. Round 6.1234 to the nearest integer
       function roundNumber(numberOne){
         let total = Math.floor(numberOne);
-        console.log(total);
+        return total;
       }
-      roundNumber(6.1234)
+      console.log(roundNumber(6.1234));
+
       const roundNumber2 = numberOne => Math.floor(numberOne);
-      roundNumber2(6.1234);
+      console.log(roundNumber2(6.1234));
+
   //7. Find the remainder when dividing 15 by 4
     function remainder(numberOne, numberTwo){
       let total = numberOne % numberTwo;
-      console.log(total);
+      return total;
     }
-    remainder(15, 4);
+    console.log(remainder(15, 4));
 
     const remainder2 = (numberOne, numberTwo) => numberOne % numberTwo;
-    remainder2(15, 4);
+    console.log(remainder2(15, 4));
