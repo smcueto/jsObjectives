@@ -1,10 +1,10 @@
 {
   "name": "jsobjectives",
   "version": "1.0.0",
-  "description": "",
+  "description": "Techtonica JavaScript Learning Objectives",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "nyc --reporter=html --reporter=text mocha"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/smcueto/jsObjectives#readme",
   "devDependencies": {
+    "mocha": "^5.1.1",
     "nyc": "^11.7.3"
   }
 }
