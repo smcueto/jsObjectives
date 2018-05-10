@@ -1,0 +1,27 @@
+# Create descriptive variable names #1
+
+## What are the characteristics of good variable names? Give an example.
+
+- In Javascript, it is important to write a descriptive variable to help identify class vs variables/functions and const.
+- The rule of thumb is to write variable names, function name and const in lowerCamelCase. For class, used in UpperCamelCase.
+
+## What are some bad variable names and why?
+
+- `var Chicago = 10;` It is not following syntax of lowerCamelCase nor is it descriptive to why it is storing 10 in it.
+- `class something {};` It is a bad function name because it is not following the UpperCamelCase syntax and it is not descriptive of what the class will contain
+
+[Example taken from node best practices.](https://github.com/i0natan/nodebestpractices#-36-naming-conventions-for-variables-constants-functions-and-classes)
+
+```js
+//for class name we use UpperCamelCase
+class SomeClassExample {}
+
+//for const names we use the const keyword and lowerCamelCase
+const config = {
+   key: 'value'
+ };
+
+//for variables and functions names we use lowerCamelCase
+let someVariableExample = 'value';
+function doSomething() {}
+```
