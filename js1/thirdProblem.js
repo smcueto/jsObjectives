@@ -1,3 +1,5 @@
+const assert = require('assert');
+
 //Perform math operations on numbers #3
   //For each of the following, log the result.
 
@@ -8,8 +10,12 @@
     }
     console.log(adding(1, 2));
 
-    const adding2 = (numberOne, numberTwo) => numberOne + numberTwo;
-    console.log(adding2(1, 2));
+    const addingArrow = (numberOne, numberTwo) => numberOne + numberTwo;
+    console.log(addingArrow(1, 2));
+
+assert.equal(adding(1,2), 3);
+assert.equal(addingArrow(1,2), 3);
+assert.equal(adding(1,2), addingArrow(1,2));
 
   //2. Divide 15 by 3
     function dividing(numberOne, numberTwo) {
