@@ -15,4 +15,4 @@
 - [In Node.js, the most widely available CSPRNG is the crypto.randomBytes function](https://gist.github.com/joepie91/7105003c3b26e65efcea63f3db82dfba)
 
 ## Is it okay to use Math.random if there's no need for cryptographically secure randomness?
-  - Yes, it is okay.
+  - Yes, it is okay. Just be mindful of when you use it.
