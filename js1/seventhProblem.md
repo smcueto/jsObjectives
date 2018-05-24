@@ -13,12 +13,20 @@
   //d`
 ## Create a function that, given a source string and a search string, returns a boolean value of whether the search string exists within the source string. Test with the `example` variable and the search strings `"bus"` and `"dog"`
 ```js
-function sourceSearch(string){
-  if(string === ){
-
+function doesTheStringInclude(sourceString, searchString){
+  if(sourceString.includes(searchString)){
+    return true;
   }else{
-
+    return false;
   }
 }
+sourceSearch('glad this bus has wifi', 'bus'); //true
+sourceSearch('glad this bus has wifi', 'dog');
+//false
 ```
 ## Return the word "wifi" from the example string
+```js
+let commuteStories = 'glad this bus has wifi';
+commuteStories.slice(-4);
+//'wifi'
+```
