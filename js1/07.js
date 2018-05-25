@@ -17,13 +17,13 @@
 
 function doesTheStringInclude(sourceString, searchString){
   if(sourceString.includes(searchString)){
-    console.log(true);
+    return true;
   }else{
-    console.log(false);
+    return false;
   }
 }
-doesTheStringInclude('glad this bus has wifi', 'bus'); //true
-doesTheStringInclude('glad this bus has wifi', 'dog');
+console.log(doesTheStringInclude('glad this bus has wifi', 'bus')); //true
+console.log(doesTheStringInclude('glad this bus has wifi', 'dog'));
 //false
 
 // 5. Return the word "wifi" from the example string
@@ -34,11 +34,11 @@ console.log(commuteStories.slice(-4));
 /* 6. Use indexOf in a new function that fulfills the requirements of the fourth question. Test with bus, dog and glad.*/
 function findingStr(sourceString, searchString){
   if(sourceString.indexOf(searchString)){
-    console.log(true);
+    return true;
   }else{
-    console.log(false);
+    return false;
   }
 };
-findingStr('glad this bus has wifi', 'bus');
-findingStr('glad this bus has wifi', 'dog');
-findingStr('glad this bus has wifi', 'glad');
+console.log(findingStr('glad this bus has wifi', 'bus'));
+console.log(findingStr('glad this bus has wifi', 'dog'));
+console.log(findingStr('glad this bus has wifi', 'glad'));
