@@ -14,12 +14,12 @@
 
   function returnLength(string){
     if(typeof string === 'undefined' || typeof string === 'object'){
-    console.log(0);
+    return 0;
     } else {
       let newString = string.length;
-      console.log(newString);
+    return newString;
     }
   }
-  returnLength('the bus driver is really impatient'); //34
-  returnLength(undefined); //0
-  returnLength(null); //0
+  console.log(returnLength('the bus driver is really impatient')); //34
+  console.log(returnLength(undefined)); //0
+  console.log(returnLength(null)); //0
