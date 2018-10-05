@@ -13,5 +13,6 @@ const delta = ['hey', 'there']
 const aggregate = [alpha, beta, delta];
 
 console.log(aggregate);
+
 //Using indexes on the aggregate array, display the value of the second integer in beta
 console.log(aggregate[1][1]);
